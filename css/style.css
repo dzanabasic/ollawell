@@ -15,25 +15,18 @@ body{
   font-weight: bold;
 
 }
-
 #email{
-  font-size: 18px;
-  color: rgb(89,89,89);
-  font-family: "Arial";
-  width:76%;
-  border-radius:12px;
-  padding-top:8px;
-  padding-bottom:8px;
-  text-indent: 12px;
-
-
+  font-size: 19px;
 }
+
 #home{
-  margin-top: 13%;
+  margin-top: 7%;
   margin-left:5%;
 
 }
-
+.has-feedback .form-control {
+  padding:20px;
+}
 .navbar{
   background-color: transparent;
   border-bottom:transparent;
@@ -49,16 +42,20 @@ body{
   max-height:100px;
   max-width:200px;
 }
+.form-group {
+  width:76%;
+  border-radius:12px;
+  text-indent: 12px;
 
+ 
+}
 .glyphicon{
-    position: absolute;
-    top: 0;
-    right: 155px;
-    font-size:20px;
+    margin-right:2px;
     color:grey;
-    margin-top:5px;
     border-radius:60%;
-  border:1px solid grey;
+    font-size:19px;
+    margin-top:6px;
+    margin-right:8px;
 }
 
 #computer-image{
@@ -70,98 +67,153 @@ body{
   margin-top:5%;
 }
 
+#ss-submit{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:50px;
+  font-size:18px;
+  padding:0 10px;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+}
+#ss-submit:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+#ss-submit:before,#ss-submit:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+#ss-submit:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#ss-submit:hover:before,#ss-submit:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+/*styles for different media devices*/
 /*for phones*/
 @media screen and (max-width: 767px){
   body{
     margin-top: 30px;
     text-align: center;
-    display: inline;
-    float: none;
-    background: none;
   }
   #logo{
     max-height:80px;
     max-width:150px;
   }
-  #input-group{
-    
-    width:90%;
+  
+  #ss-submit{
+  display: inline-block;
+  width:76%;
+}
+  .form-group {
+  width:76%;
+  border-radius:12px;
+  text-indent: 12px;
+  display: inline-block;
 
+  
+}
+  #intro-text{
+      width:100%;
+      font-size: 30px;
+      color: rgb(89,89,89);
+      font-family: "Arial Rounded MT Bold";
+      font-weight: bold;
 
   }
-  .glyphicon{
-    position: absolute;
-    top: 0;
-    right: 70px;
-}
-#intro-text{
-    width:100%;
-    font-size: 30px;
-    color: rgb(89,89,89);
-    font-family: "Arial Rounded MT Bold";
-    font-weight: bold;
-
-}
-
+  #computer-image{
+    width:0px;
+    height:0px;
+  }
+  
 }
 /*for tablets*/
-@media screen and (min-width: 768px max-width: 991px){
+@media screen and (min-width: 768px) and (max-width: 991px){
   body{
     margin-top: 30px;
     text-align: center;
-    display: inline;
-    float: none;
-    background: none;
   }
   #logo{
     max-height:80px;
     max-width:150px;
   }
-  #input-group{
-    
-    width:90%;
+  
+  #ss-submit{
+  display: inline-block;
+  width:76%;
+}
+  .form-group {
+  width:76%;
+  border-radius:12px;
+  text-indent: 12px;
+  display: inline-block;
 
-
-  }
-  .glyphicon{
-    position: absolute;
-    top: 0;
-    right: 50px;
+  
 }
   #intro-text{
-    width:100%;
-    font-size: 30px;
-    color: rgb(89,89,89);
-    font-family: "Arial Rounded MT Bold";
-    font-weight: bold;
+      width:100%;
+      font-size: 30px;
+      color: rgb(89,89,89);
+      font-family: "Arial Rounded MT Bold";
+      font-weight: bold;
 
-}
-
+  }
+  #computer-image{
+    width:0px;
+    height:0px;
+  }
+  
 }
 
 /*for small laptops*/
-@media screen and (min-width: 992px max-width: 1199px){
+@media screen and (min-width: 992px) and (max-width: 1199px){
   body{
     margin-top: 30px;
     text-align: center;
-    display: inline;
-    float: none;
-    background: none;
   }
   #logo{
     max-height:80px;
     max-width:150px;
   }
-  #input-group{
-    
-    width:90%;
+  
+  
+  #ss-submit{
+  display: inline-block;
+  width:100%;
+}
+  .form-group {
+  width:100%;
+  border-radius:12px;
+  text-indent: 12px;
+  display: inline-block;
 
+  
+}
+  #intro-text{
+      width:100%;
+      font-size: 43px;
+      color: rgb(89,89,89);
+      font-family: "Arial Rounded MT Bold";
+      font-weight: bold;
 
   }
-  .glyphicon{
-    position: absolute;
-    top: 0;
-    right: 50px;
-}
+  
+  
+
 
 }
