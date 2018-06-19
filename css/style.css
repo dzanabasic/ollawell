@@ -1,6 +1,6 @@
 body{
   margin-top:2%;
-  background: url("../img/background.png") no-repeat center center fixed; 
+  background: url("../img/background-new.png") no-repeat center center fixed; 
   -webkit-background-size:cover;
   -moz-background-size:cover;
   -o-background-size:cover;
@@ -9,7 +9,7 @@ body{
 }
 
 #intro-text{
-  font-size: 50px;
+  font-size: 48px;
   color: rgb(89,89,89);
   font-family: "Arial Rounded MT Bold";
   font-weight: bold;
@@ -17,24 +17,23 @@ body{
 }
 
 #email{
-  font-size: 20px;
+  font-size: 18px;
   color: rgb(89,89,89);
   font-family: "Arial";
+  width:76%;
+  border-radius:12px;
+  padding-top:8px;
+  padding-bottom:8px;
+  text-indent: 12px;
 
 
 }
 #home{
-  margin-top: 16%;
+  margin-top: 13%;
   margin-left:5%;
-}
-#input-group{
-  position: absolute;
-  border-radius:25px;
-  width:73%;
-  margin-top:2%;
-  text-align:center;
 
 }
+
 .navbar{
   background-color: transparent;
   border-bottom:transparent;
@@ -50,21 +49,29 @@ body{
   max-height:100px;
   max-width:200px;
 }
+
 .glyphicon{
-  color:grey;
-  border-radius:60%;
+    position: absolute;
+    top: 0;
+    right: 155px;
+    font-size:20px;
+    color:grey;
+    margin-top:5px;
+    border-radius:60%;
   border:1px solid grey;
-  font-size: 16px;
-  text-align:center;
-  margin-top:8px;
-  margin-right:8px;
-}
-.form-group input{
-  padding:25px;
-
 }
 
-@media screen and (max-width: 600px){
+#computer-image{
+      vertical-align: top;
+      height:370px;
+}
+#texti{
+  vertical-align: middle;
+  margin-top:5%;
+}
+
+/*for phones*/
+@media screen and (max-width: 767px){
   body{
     margin-top: 30px;
     text-align: center;
@@ -82,5 +89,79 @@ body{
 
 
   }
+  .glyphicon{
+    position: absolute;
+    top: 0;
+    right: 70px;
+}
+#intro-text{
+    width:100%;
+    font-size: 30px;
+    color: rgb(89,89,89);
+    font-family: "Arial Rounded MT Bold";
+    font-weight: bold;
+
+}
+
+}
+/*for tablets*/
+@media screen and (min-width: 768px max-width: 991px){
+  body{
+    margin-top: 30px;
+    text-align: center;
+    display: inline;
+    float: none;
+    background: none;
+  }
+  #logo{
+    max-height:80px;
+    max-width:150px;
+  }
+  #input-group{
+    
+    width:90%;
+
+
+  }
+  .glyphicon{
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
+  #intro-text{
+    width:100%;
+    font-size: 30px;
+    color: rgb(89,89,89);
+    font-family: "Arial Rounded MT Bold";
+    font-weight: bold;
+
+}
+
+}
+
+/*for small laptops*/
+@media screen and (min-width: 992px max-width: 1199px){
+  body{
+    margin-top: 30px;
+    text-align: center;
+    display: inline;
+    float: none;
+    background: none;
+  }
+  #logo{
+    max-height:80px;
+    max-width:150px;
+  }
+  #input-group{
+    
+    width:90%;
+
+
+  }
+  .glyphicon{
+    position: absolute;
+    top: 0;
+    right: 50px;
+}
 
 }
