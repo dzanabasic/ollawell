@@ -17,6 +17,8 @@ body{
 }
 #email{
   font-size: 19px;
+  width:100%;
+
 }
 
 #home{
@@ -24,9 +26,18 @@ body{
   margin-left:5%;
 
 }
+
 .has-feedback .form-control {
   padding:20px;
 }
+.form-group  {
+  padding:20px;
+  display:inline-block;
+}
+.ss-item {
+display:inline-block;
+}
+
 .navbar{
   background-color: transparent;
   border-bottom:transparent;
@@ -43,20 +54,11 @@ body{
   max-width:200px;
 }
 .form-group {
-  width:76%;
   border-radius:12px;
   text-indent: 12px;
+}
 
- 
-}
-.glyphicon{
-    margin-right:2px;
-    color:grey;
-    border-radius:60%;
-    font-size:19px;
-    margin-top:6px;
-    margin-right:8px;
-}
+
 
 #computer-image{
       vertical-align: top;
@@ -65,6 +67,8 @@ body{
 #texti{
   vertical-align: middle;
   margin-top:5%;
+
+
 }
 
 #ss-submit{
@@ -72,12 +76,15 @@ body{
   color:#fff;
   border:none;
   position:relative;
-  height:50px;
+  height:40px;
   font-size:18px;
   padding:0 10px;
   cursor:pointer;
+  margin-left:1%
   transition:800ms ease all;
   outline:none;
+  /*TO REMOVE*/
+  margin:0;
 }
 #ss-submit:hover{
   background:#fff;
@@ -104,6 +111,9 @@ body{
   transition:800ms ease all;
 }
 
+form{
+  margin-left:-18px;
+}
 /*styles for different media devices*/
 /*for phones*/
 @media screen and (max-width: 767px){
@@ -116,18 +126,14 @@ body{
     max-width:150px;
   }
   
-  #ss-submit{
-  display: inline-block;
-  width:76%;
-}
+ 
   .form-group {
-  width:76%;
   border-radius:12px;
   text-indent: 12px;
-  display: inline-block;
+  display:inline-block;
 
-  
-}
+  } 
+    
   #intro-text{
       width:100%;
       font-size: 30px;
@@ -141,12 +147,24 @@ body{
     height:0px;
   }
   
+  /*NEW ADDITION*/
+  
+
+  #email{
+    width:200px;
+    font-size:18px;
+  }
 }
+
+
+
+
+
 /*for tablets*/
 @media screen and (min-width: 768px) and (max-width: 991px){
   body{
     margin-top: 30px;
-    text-align: center;
+    text-align:center;
   }
   #logo{
     max-height:80px;
@@ -155,19 +173,22 @@ body{
   
   #ss-submit{
   display: inline-block;
-  width:76%;
+  width:100px; /*CHAGE IT*/
 }
-  .form-group {
-  width:76%;
-  border-radius:12px;
-  text-indent: 12px;
-  display: inline-block;
+    .form-group {
+    border-radius:12px;
+    text-indent: 12px;
+    display:inline-block;
+  
+  } 
+  form{
+  margin-left:-18px;
+}
 
   
-}
   #intro-text{
       width:100%;
-      font-size: 30px;
+      font-size: 34px;
       color: rgb(89,89,89);
       font-family: "Arial Rounded MT Bold";
       font-weight: bold;
@@ -177,43 +198,58 @@ body{
     width:0px;
     height:0px;
   }
-  
+  /*code for centering form*/
+ 
+
+  #email{
+  }
 }
 
 /*for small laptops*/
 @media screen and (min-width: 992px) and (max-width: 1199px){
   body{
     margin-top: 30px;
-    text-align: center;
+    text-align:left;
   }
   #logo{
     max-height:80px;
     max-width:150px;
   }
   
-  
-  #ss-submit{
-  display: inline-block;
-  width:100%;
+  form{
+  margin-left:-27px;
 }
-  .form-group {
-  width:100%;
+  
+   .form-group {
   border-radius:12px;
   text-indent: 12px;
-  display: inline-block;
-
+  display:inline-block;
   
-}
+  } 
+    
   #intro-text{
       width:100%;
-      font-size: 43px;
+      font-size: 38px;
       color: rgb(89,89,89);
       font-family: "Arial Rounded MT Bold";
       font-weight: bold;
 
   }
+ 
+  #ss-submit{
+  display: inline-block;
+}
+    .form-group {
+    border-radius:12px;
+    text-indent: 12px;
+    display:inline-block;
   
+  } 
+   /*NEW ADDITION*/
   
+  #email{
+    max-width:320px;
+  }
 
 
 }
